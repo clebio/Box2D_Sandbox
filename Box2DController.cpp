@@ -18,7 +18,7 @@ Box2DController::~Box2DController() {
 
 void Box2DController::createWorld() {
     // Define world, gravity
-    world = new b2World(b2Vec2(0.0f, G), true);
+  world = new b2World(b2Vec2(0.0f, G) ) ; // , true);
 }
 
 void Box2DController::addObject(Shape* shape) {
